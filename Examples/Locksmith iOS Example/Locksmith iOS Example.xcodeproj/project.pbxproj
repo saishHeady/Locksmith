@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		056F2A731BA42E3C00B24B65 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056F2A711BA42E3C00B24B65 /* Interface.storyboard */; };
 		056F2A751BA42E3C00B24B65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 056F2A741BA42E3C00B24B65 /* Assets.xcassets */; };
-		056F2A7C1BA42E3C00B24B65 /* Locksmith Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 056F2A7B1BA42E3C00B24B65 /* Locksmith Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		056F2A811BA42E3C00B24B65 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056F2A801BA42E3C00B24B65 /* InterfaceController.swift */; };
 		056F2A831BA42E3C00B24B65 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056F2A821BA42E3C00B24B65 /* ExtensionDelegate.swift */; };
 		056F2A851BA42E3C00B24B65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 056F2A841BA42E3C00B24B65 /* Assets.xcassets */; };
@@ -24,13 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		056F2A7D1BA42E3C00B24B65 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0E13A9981BA3EE8600A06FF9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 056F2A7A1BA42E3C00B24B65;
-			remoteInfo = "Locksmith Extension";
-		};
 		056F2A871BA42E3C00B24B65 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0E13A9981BA3EE8600A06FF9 /* Project object */;
@@ -41,17 +33,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		056F2A8F1BA42E3C00B24B65 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				056F2A7C1BA42E3C00B24B65 /* Locksmith Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		056F2A911BA42E3C00B24B65 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,7 +60,6 @@
 		056F2A721BA42E3C00B24B65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		056F2A741BA42E3C00B24B65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		056F2A761BA42E3C00B24B65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		056F2A7B1BA42E3C00B24B65 /* Locksmith Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Locksmith Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		056F2A801BA42E3C00B24B65 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		056F2A821BA42E3C00B24B65 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		056F2A841BA42E3C00B24B65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -166,7 +146,6 @@
 			children = (
 				0E13A9A01BA3EE8700A06FF9 /* Locksmith iOS Example.app */,
 				056F2A6F1BA42E3C00B24B65 /* Locksmith.app */,
-				056F2A7B1BA42E3C00B24B65 /* Locksmith Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -227,34 +206,17 @@
 			buildConfigurationList = 056F2A901BA42E3C00B24B65 /* Build configuration list for PBXNativeTarget "Locksmith" */;
 			buildPhases = (
 				056F2A6D1BA42E3C00B24B65 /* Resources */,
-				056F2A8F1BA42E3C00B24B65 /* Embed App Extensions */,
+				056F2A771BA42E3C00B24B65 /* Sources */,
+				056F2A781BA42E3C00B24B65 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				056F2A7E1BA42E3C00B24B65 /* PBXTargetDependency */,
 			);
 			name = Locksmith;
 			productName = Locksmith;
 			productReference = 056F2A6F1BA42E3C00B24B65 /* Locksmith.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		056F2A7A1BA42E3C00B24B65 /* Locksmith Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 056F2A8E1BA42E3C00B24B65 /* Build configuration list for PBXNativeTarget "Locksmith Extension" */;
-			buildPhases = (
-				056F2A771BA42E3C00B24B65 /* Sources */,
-				056F2A781BA42E3C00B24B65 /* Frameworks */,
-				056F2A791BA42E3C00B24B65 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Locksmith Extension";
-			productName = "Locksmith Extension";
-			productReference = 056F2A7B1BA42E3C00B24B65 /* Locksmith Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
+			productType = "com.apple.product-type.application";
 		};
 		0E13A99F1BA3EE8700A06FF9 /* Locksmith iOS Example */ = {
 			isa = PBXNativeTarget;
@@ -282,14 +244,12 @@
 		0E13A9981BA3EE8600A06FF9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1520;
 				ORGANIZATIONNAME = "Matthew Palmer";
 				TargetAttributes = {
 					056F2A6E1BA42E3C00B24B65 = {
-						CreatedOnToolsVersion = 7.0;
-					};
-					056F2A7A1BA42E3C00B24B65 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 					0E13A99F1BA3EE8700A06FF9 = {
@@ -299,7 +259,7 @@
 			};
 			buildConfigurationList = 0E13A99B1BA3EE8600A06FF9 /* Build configuration list for PBXProject "Locksmith iOS Example" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -312,7 +272,6 @@
 			targets = (
 				0E13A99F1BA3EE8700A06FF9 /* Locksmith iOS Example */,
 				056F2A6E1BA42E3C00B24B65 /* Locksmith */,
-				056F2A7A1BA42E3C00B24B65 /* Locksmith Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -323,15 +282,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				056F2A751BA42E3C00B24B65 /* Assets.xcassets in Resources */,
-				056F2A731BA42E3C00B24B65 /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		056F2A791BA42E3C00B24B65 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 				056F2A851BA42E3C00B24B65 /* Assets.xcassets in Resources */,
+				056F2A731BA42E3C00B24B65 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,11 +321,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		056F2A7E1BA42E3C00B24B65 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 056F2A7A1BA42E3C00B24B65 /* Locksmith Extension */;
-			targetProxy = 056F2A7D1BA42E3C00B24B65 /* PBXContainerItemProxy */;
-		};
 		056F2A881BA42E3C00B24B65 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 056F2A6E1BA42E3C00B24B65 /* Locksmith */;
@@ -430,14 +377,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				IBSC_MODULE = Locksmith_Extension;
 				INFOPLIST_FILE = Locksmith/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.matthewpalmer.Locksmith-iOS-Example.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Debug;
 		};
@@ -446,47 +396,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				IBSC_MODULE = Locksmith_Extension;
 				INFOPLIST_FILE = Locksmith/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.matthewpalmer.Locksmith-iOS-Example.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		056F2A8C1BA42E3C00B24B65 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74E67F961D2CBE4F8D171223 /* Pods-watch.debug.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = "Locksmith Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.matthewpalmer.Locksmith-iOS-Example.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		056F2A8D1BA42E3C00B24B65 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 379DD1E5C8CDE5ABD6E50A38 /* Pods-watch.release.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = "Locksmith Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.matthewpalmer.Locksmith-iOS-Example.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Release;
 		};
@@ -494,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -502,14 +423,17 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -520,6 +444,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -534,11 +459,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -547,6 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -555,14 +482,17 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -573,6 +503,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -581,10 +512,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -596,11 +529,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Locksmith iOS Example/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.matthewpalmer.Locksmith-iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -610,27 +546,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Locksmith iOS Example/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.matthewpalmer.Locksmith-iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		056F2A8E1BA42E3C00B24B65 /* Build configuration list for PBXNativeTarget "Locksmith Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				056F2A8C1BA42E3C00B24B65 /* Debug */,
-				056F2A8D1BA42E3C00B24B65 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		056F2A901BA42E3C00B24B65 /* Build configuration list for PBXNativeTarget "Locksmith" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
